@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  get 'habits/index'
+  resources :habits
+
   devise_for :users
   namespace :admin do
       resources :posts
-
+      resources :habits
       root to: "posts#index"
     end
   resources :posts
