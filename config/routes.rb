@@ -7,8 +7,8 @@ Rails.application.routes.draw do
       root to: "posts#index"
     end
   resources :posts
-  root 'public#index'
-  get 'public/home', as:'/home'
+  root 'public#home'
+  get 'about', to:'public#about'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
