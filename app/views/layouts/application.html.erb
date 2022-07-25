@@ -12,6 +12,11 @@
   </head>
 
   <body>
+    <div>MENU BAR
+    <%= link_to "Home", root_path%>
+    <%= link_to "About", about_path%>
+    <%= link_to "Posts", posts_path%>
+    </div>
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
